@@ -1,0 +1,48 @@
+---
+title: "Iris Dataset"
+author: "Allan Lao"
+output: html_document
+---
+
+##ctrl-alt-t for code blocks
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Iris Dataset in R
+
+The iris dataset is a built-in dataset in R that contains measurements on 4 different attributes (in centimeters) for 50 flowers from 3 different species.
+
+This tutorial explains how to explore and summarize a dataset in R, using the iris dataset as an example
+
+Load the Iris Dataset
+
+```{r}
+data(iris)
+```
+
+We can take a look at the first and last six and rows of the dataset by using the $head()$ and $tail()$ functions respectively:
+
+```{r}
+head(iris)
+tail(iris)
+```
+
+Summarize the Iris Dataset
+
+We can use the $summary()$ function to quickly summarize each variable in the dataset:
+
+```{r}
+summary(iris)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
